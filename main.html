@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--tailwind import-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+            body: '"DM Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+            heading: '"DM Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+            sans: '"DM Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+            serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+            mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+                },
+            }
+        }
+      </script>
+    
+    <!--End Tailwind-->
+
+    <!--Imports-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+<Section id="main" class="relative overflow-hidden">
+    <nav class=" bg-white dark:bg-green-900 fixed w-full z-20 top-0 left-0 border-b border-green-200 dark:border-green-600 shadow">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
+        <a href="#main" class="flex items-center">
+            <img src="/assets/logo/GreenLogo.png" class="h-[50px] mr-[-0rem]" alt="Delunas Logo">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Delunas</span>
+        </a>
+        <div class="flex md:order-2">
+            <a href="/auth/login.html" ype="button" class="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" >Login Now</a>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg md:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200 dark:text-green-400 dark:hover:bg-green-700 dark:focus:ring-green-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-green-100 rounded-lg bg-green-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-green-800 md:dark:bg-green-900 dark:border-green-700">
+            <li>
+              <a href="#about" class="block py-2 pl-3 pr-4 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">About</a>
+            </li>
+            <li>
+              <a href="#services" class="block py-2 pl-3 pr-4 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">Services</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="relative bg-green-50 pt-14 lg:pt-32 pb-12 md:pb-24">
+        <div class="container mx-auto sm:px-[12rem] md:px-[12rem] px-4 ">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
+                    <div class="w-full text-center lg:text-left">
+                        <div class="max-w-md mx-auto lg:mx-0">
+                            <h2 class="mb-3 text-4xl lg:text-5xl font-bold font-heading">
+                            <span>Your Smile.</span>
+                            <span class="text-green-600">Our Passion</span>
+                            </h2>
+                        </div>
+                        <div class="max-w-sm mx-auto lg:mx-0">
+                            <p class="mb-6 text-green-400 leading-loose">Delunas is dedicated to provide you with the highest standard of quality dental care services that are tailored to meet you need and comfort.</p>
+                            <div><a class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-green-600 hover:bg-green-700 focus:ring-green-300   text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200" href="/auth/login.html">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
+                    <div class="relative" style="z-index: 0;">
+                      <img class="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none" src="/assets/image/clinic.jpg" alt="">
+                      <img class="hidden md:block absolute" style="top:-2rem; right: 3rem; z-index: -1;" src="/assets/elements/green-dark-up.svg" alt="">
+                      <img class="hidden md:block absolute" style="bottom:-2rem; right: -2rem; z-index: -1;" src="/assets/elements/wing-green-down.svg" alt="">
+                      <img class="hidden md:block absolute" style="top:3rem; right: -3rem; z-index: -1;" src="/assets/elements/bullets-green-right.svg" alt="">
+                      <img class="hidden md:block absolute" style="bottom:2.5rem; left: -4.5rem; z-index: -1;" src="/assets/elements/bullets-green-left.svg" alt="">
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</Section>
+<section id="about" class="bg-[#DAF1DE] relative p-[100px] md:p-[60px] box-border ">
+    <div class="container ">
+        <div class="flex flex-row justify-center ">
+            <div class="text-center max-w-full ">
+              <h2 class="text-base text-black font-medium">About</h2>
+              <p class="mt-1 text-4xl font-stem_bold sm:text-5xl sm:tracking-tight lg:text-6xl text-black ">Why Delunas <span class="mt-1 text-4xl font-extrabold text-[#F9D304] sm:text-5xl sm:tracking-tight lg:text-6xl ">Dental Centre?</span></p>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center ">
+          <div class="lg:columns-3 md:columns-4 pt-[.5rem] mt-[1.5rem] ">
+              <div class=" relative shadow overflow-hidden  p-5 m-4 md:m-0 text-center border  rounded-md transition  ease-out hover:ease-in | hover:bg-green-400 dark:bg-green-400  dark:hover:bg-green-600 bg-[#DAF1DE] ">
+                <h1 class="antialiased mb-[.5rem] font-sans text-[2.5rem] font-extralight text-green-600 hover:text-green-800 dark:text-white dark:hover:text-green-500">30</h1>
+                <div class=" flex-auto min-h-1 p-0 ">
+                  <h5 class="antialiased font-sans leading-[1.5rem] text-[1.25rem] mb-[.5rem] mp-0 hover:text-white "> Plus Years</h5>
+                  <p class="antialiased mb-0 pb-2 mt-0 leading-[1.6rem] hover:text-green-800 dark:text-white dark:hover-gray-200">of painless expertise and trusted services.
+                  </p>
+                </div>
+              </div>
+              <div class=" relative shadow overflow-hidden  p-5 m-4 md:m-0 text-center border  rounded-md transition duration-150 ease-out hover:ease-in | hover:bg-green-400 dark:bg-green-400  dark:hover:bg-green-600 bg-[#DAF1DE] ">
+                <h1 class="antialiased mb-[.5rem] font-sans text-[2.5rem] font-extralight text-green-600 hover:text-green-800 dark:text-white dark:hover:text-green-500">
+                  <div class="mt-5 flex justify-center">
+                  <svg class="w-[40px] h-[40px] text-green-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1" d="m13 19-6-5-6 5V2a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17Z"/>
+                </svg></div></h1>
+                <div class=" flex-auto min-h-1 p-0 ">
+                  <h5 class="antialiased font-sans leading-[1.5rem] text-[1.25rem] mb-[.5rem] mp-0 hover:text-white "> Licensed</h5>
+                  <p class="antialiased mb-0 pb-2 mt-0 leading-[1.6rem] hover:text-green-800 dark:text-white dark:hover-gray-200">Advance Procedures: Crowns, Implants and more.
+                  </p>
+                </div>
+              </div>
+              <div class=" relative shadow overflow-hidden p-5 m-4 md:m-0 text-center border  rounded-md transition duration-150 ease-out hover:ease-in  hover:bg-green-400 dark:bg-green-400  dark:hover:bg-green-600 bg-[#DAF1DE] ">
+                <h1 class="antialiased mb-[.5rem] font-sans text-[2.5rem] font-extralight text-green-600 hover:text-green-800 dark:text-white dark:hover:text-green-500">
+                  <div class="mt-5 flex justify-center">
+                    <svg class="w-[40px] h-[40px] text-green-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                      <path fill="currentColor" d="M6 1a1 1 0 0 0-2 0h2ZM4 4a1 1 0 0 0 2 0H4Zm7-3a1 1 0 1 0-2 0h2ZM9 4a1 1 0 1 0 2 0H9Zm7-3a1 1 0 1 0-2 0h2Zm-2 3a1 1 0 1 0 2 0h-2ZM1 6a1 1 0 0 0 0 2V6Zm18 2a1 1 0 1 0 0-2v2ZM5 11v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 11v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 15v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 15v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 11v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM5 15v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM2 4h16V2H2v2Zm16 0h2a2 2 0 0 0-2-2v2Zm0 0v14h2V4h-2Zm0 14v2a2 2 0 0 0 2-2h-2Zm0 0H2v2h16v-2ZM2 18H0a2 2 0 0 0 2 2v-2Zm0 0V4H0v14h2ZM2 4V2a2 2 0 0 0-2 2h2Zm2-3v3h2V1H4Zm5 0v3h2V1H9Zm5 0v3h2V1h-2ZM1 8h18V6H1v2Zm3 3v.01h2V11H4Zm1 1.01h.01v-2H5v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H5v2h.01v-2ZM9 11v.01h2V11H9Zm1 1.01h.01v-2H10v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM9 15v.01h2V15H9Zm1 1.01h.01v-2H10v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM14 15v.01h2V15h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM14 11v.01h2V11h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM4 15v.01h2V15H4Zm1 1.01h.01v-2H5v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H5v2h.01v-2Z"/>
+                    </svg></div></h1>
+                <div class=" flex-auto min-h-1 p-0 ">
+                  <h5 class="antialiased font-sans leading-[1.5rem] text-[1.25rem] mb-[.5rem] mp-0 hover:text-white ">Appointment Only</h5>
+                  <p class="antialiased mb-0 pb-0 mt-0 leading-[1.6rem] hover:text-green-800 dark:text-white dark:hover-gray-200">Your time and safety is as important as your smile.
+                  </p>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+        
+    </div>
+</section>
+<section id="accredited" class="bg-white py-4 border-y-[1px] border-x-[1px] "> 
+    <div class="container ">
+        <div class="flex flex-row justify-center -mx-4">
+          <div class=" flex inline-block justify-center md:grid-cols-2"><img class=" h-[80px]" src="/assets/logo/maxicare-logo.png" alt="Maxicare"></div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="bg-[#DAF1DE] relative p-[100px] md:p-[60px] box-border ">
+      <div class="container">
+        <div class="flex flex-row justify-center ">
+          <div class="text-center max-w-full ">
+            <p class="mt-1 text-4xl font-stem_bold sm:text-5xl sm:tracking-tight lg:text-6xl text-black ">Our Featured <span class="mt-1 text-4xl font-extrabold text-[#F9D304] sm:text-5xl sm:tracking-tight lg:text-6xl ">Services</span></p>
+          </div>
+      </div>
+      </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+</html>
